@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing-unit) * 2);
+  padding: calc(var(--spacing-unit) * 2);
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: calc(var(--spacing-unit) * 3);
+
+  input {
+    flex: 1;
+    max-width: 300px;
+  }
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: calc(var(--spacing-unit) * 3);
+  font-weight: 500;
+}
+
+.courses {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: calc(var(--spacing-unit) * 2);
+}
+
+router-outlet {
+  display: block;
+  margin-top: calc(var(--spacing-unit) * 3);
+}

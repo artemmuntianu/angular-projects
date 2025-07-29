@@ -8,13 +8,15 @@
 <body>
     <div class="header">
         <input [value]="title()" type="text" />
-        <button (click)="handleChangeTitle()">Change Title</button>
+        <button (click)="onTitleChange()">Change Title</button>
     </div>
-    <div class="courses">
-      <h1>Available Courses</h1>
-      <course-card />
-      <course-card />
-    </div>
+    <hr />
+    <ul>
+      <li><a [routerLink]="['/']" routerLinkActive="router-link-active">Home</a></li>
+      <li><a [routerLink]="['/course-gallery']" routerLinkActive="router-link-active">Course Gallery</a></li>
+      <li><a [routerLink]="['/image-gallery']" routerLinkActive="router-link-active">Image Gallery</a></li>
+    </ul>
+    <hr />
     <router-outlet />
 </body>
 </html>
